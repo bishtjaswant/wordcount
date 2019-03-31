@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counted</title>
+</head>
+<body>
+
+<h2>Counted words</h2>
+<a href="{% url 'home' %}">return to homepage </a>
+<p> {{text}} </p>
+<p> there are <strong>{{length}}  </strong> words </p>
+
+<ul>
+    {% for w, v in worddict %}
+      <li> {{w}} {{v}} </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

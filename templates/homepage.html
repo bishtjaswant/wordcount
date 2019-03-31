@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+</head>
+<body>
+
+
+<h1>welcome to counter website </h1>
+<a href="{% url 'about' %}">About me </a>
+
+<form action="{%  url 'count' %}">
+    <textarea name="fulltext" cols="50" rows="15" placeholder="write any text here"></textarea> <br>
+    <input type="submit" name="count" value="count now">
+</form>
+</body>
+</html>
